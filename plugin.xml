@@ -117,7 +117,9 @@
                      android:name="org.altbeacon.beacon.BeaconIntentProcessor">
                 <meta-data android:name="background" android:value="true" />
             </service>
-			<service android:name="org.altbeacon.beacon.service.ScanJob" android:permission="android.permission.BIND_JOB_SERVICE" />
+			<service android:name="org.altbeacon.beacon.service.ScanJob"
+				 android:permission="android.permission.BIND_JOB_SERVICE"
+				 android:exported="false" />
         </config-file>
 
         <source-file src="src/android/LocationManager.java" target-dir="src/com/unarin/cordova/beacon" />
